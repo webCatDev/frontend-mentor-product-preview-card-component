@@ -72,6 +72,7 @@ button {
 .card h1 {
   max-width: 15ch;
   margin: var(--margin-small) 0;
+  color: var(--color-neutral-very-dark-blue);
 }
 
 .price-box {
@@ -136,3 +137,4 @@ button {
     object-fit: cover;
   }
 }
+
