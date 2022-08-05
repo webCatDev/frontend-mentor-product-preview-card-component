@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary-dark-cyan: hsl(158, 36%, 37%);
+  --color-primary-cream: hsl(30, 38%, 92%);
+
+  --color-neutral-very-dark-blue: hsl(212, 21%, 14%);
+  --color-neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+
+  --margin-small: 0.5rem;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-primary-cream);
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+}
+
+img {
+  width: 100%;
+  margin-bottom: var(--margin-small);
+}
+
+p {
+  margin: var(--margin-small) 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+.card {
+  background-color: var(--color-neutral-white);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 40rem;
+  margin: 2rem;
+}
+
+.content {
+  padding: 1.2rem;
+}
+
+.content p {
+  color: var(--color-neutral-dark-grayish-blue);
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+}
+
+.card h2 {
+  font-weight: normal;
+  color: var(--color-neutral-dark-grayish-blue);
+}
+
+.card h1 {
+  max-width: 15ch;
+  margin: var(--margin-small) 0;
+}
+
+.price-box {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+
+.price-box__price {
+  font-weight: 700;
+  color: var(--color-primary-dark-cyan);
+  font-size: 2.5rem;
+}
+
+.price-box__discounted-from {
+  color: var(--color-neutral-dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+.cta {
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: var(--margin-small);
+  width: 100%;
+  background-color: var(--color-primary-dark-cyan);
+  border: none;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--color-neutral-white);
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+.cta svg {
+  height: 32px;
+  width: 32px;
+  stroke: currentColor;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card picture {
+    flex: 0 0 40%;
+  }
+
+  .card .content {
+    flex: 1;
+  }
+
+  .card picture img {
+    height: 100%;
+    object-fit: cover;
+  }
+}
