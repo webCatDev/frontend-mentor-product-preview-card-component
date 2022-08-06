@@ -8,6 +8,7 @@
 
 :root {
   --color-primary-dark-cyan: hsl(158, 36%, 37%);
+  --color-primary-dark-cyan-2: hsl(158, 67%, 29%);
   --color-primary-cream: hsl(30, 38%, 92%);
 
   --color-neutral-very-dark-blue: hsl(212, 21%, 14%);
@@ -111,6 +112,10 @@ button {
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
+}
+
+.cta:hover {
+  background-color: var(--color-primary-dark-cyan-2);
 }
 
 .cta svg {
